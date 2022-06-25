@@ -4,7 +4,8 @@ import "./index.css"
 import Card from './Components/Card';
 import Header from './Components/Header';
 import Intro from './Components/Intro';
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route,Routes} from "react-router-dom";
+import Otaku from './Components/Otaku';
 
 
 function App() {
@@ -17,7 +18,10 @@ function App() {
           <Card/>
         </div>  */}
 
-        <Intro />
+        <Routes>
+          <Route path='/' element={<Intro/>}/>
+          <Route path='otakumode' element={<Otaku/>}/>
+        </Routes>
     </div>
     
   );
