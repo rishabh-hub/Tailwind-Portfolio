@@ -10,7 +10,7 @@ import Otaku from './Components/Otaku';
 
 function App() {
   return (
-    <div className="bg-black w-screen h-screen">
+    <div className="bg-black w-full h-screen">
        <Header/>
         {/* <div className='sm:flex sm:row-auto'>
           <Card />
